@@ -14,7 +14,7 @@ import static io.qameta.allure.Allure.step;
 
 public class AndroidTests extends tests.app.TestBase {
 
-    @Tag("new")
+    @Tag("selenide")
     @Test
     @Owner("QA.GURU")
     @DisplayName("Looking for Johnny")
