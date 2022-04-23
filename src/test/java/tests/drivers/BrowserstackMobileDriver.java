@@ -1,10 +1,10 @@
-package guru.qa.drivers;
+package tests.drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
-import guru.qa.config.Credentials;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import tests.config.Credentials;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -30,7 +30,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         caps.setCapability("app", Credentials.config.app());
 
         // Specify device and os_version for testing
-        caps.setCapability("device", "Google Pixel 3");
+        caps.setCapability("device", "Samsung Galaxy A10");
         caps.setCapability("os_version", "9.0");
 
         // Set other BrowserStack capabilities
