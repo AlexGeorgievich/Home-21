@@ -13,9 +13,11 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 
 public class AndroidTests extends tests.app.TestBase {
+
+    @Tag("new")
+    @Test
     @Owner("QA.GURU")
     @DisplayName("Looking for Johnny")
-    @Test
     void newSearchTest() {
         step("Go ahead without welcome window", () ->
                 $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());
